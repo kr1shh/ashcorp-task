@@ -1,7 +1,7 @@
-import HeroCarousel from "@/components/HeroCarousel"
-import NavBar from "@/components/NavBar"
-import AnimatedCounter from "@/components/AnimatedCounter"
-import Image from "next/image"
+import HeroCarousel from "@/components/HeroCarousel";
+import NavBar from "@/components/NavBar";
+import AnimatedCounter from "@/components/AnimatedCounter";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -38,12 +38,13 @@ const Home = () => {
         </div>
       </section>
 
-
       {/* Welcome section */}
 
       <main className="bg-primary_color text-white w-full">
         <section className="relative w-full flex flex-col items-center justify-center p-7 py-32 sm:px-14 lg:py-52">
-          <h1 className="font-allenoire text-[22px] sm:text-[38px] lg:text-[58px]">welcome to BLM</h1>
+          <h1 className="font-allenoire text-[22px] sm:text-[38px] lg:text-[58px]">
+            welcome to BLM
+          </h1>
           <div>
             <Image
               src={"/assets/icons/underline-pattern.svg"}
@@ -63,25 +64,58 @@ const Home = () => {
 
           <div className="absolute top-0 left-0 w-[100px] h-[100px] sm:w-[160px] sm:h-[160px] lg:w-[270px] lg:h-[270px]">
             <Image
-            src={ "/assets/icons/pattern.svg" }
-            alt=" pattern "
-            layout="fill"
-            objectFit="cover"
-            className="absolute top-0 left-0"/>
+              src={"/assets/icons/pattern.svg"}
+              alt=" pattern "
+              layout="fill"
+              objectFit="cover"
+              className="absolute top-0 left-0"
+            />
           </div>
 
           <div className="absolute top-0 right-0 w-[100px] h-[100px] sm:w-[160px] sm:h-[160px] lg:w-[270px] lg:h-[270px]">
             <Image
-            src={ "/assets/icons/pattern.svg" }
-            alt=" pattern "
-            layout="fill"
-            objectFit="cover"
-            className="absolute top-0 left-0 scale-x-[-1]"/>
+              src={"/assets/icons/pattern.svg"}
+              alt=" pattern "
+              layout="fill"
+              objectFit="cover"
+              className="absolute top-0 left-0 scale-x-[-1]"
+            />
+          </div>
+        </section>
+      </main>
+
+      {/* Why us section */}
+
+      <main className="p-6 py-10">
+        <section className="flex flex-col items-center justify-center gap-7">
+          <div className="flex flex-col justify-start items-start gap-3">
+            <h1 className="relative inline-block font-allenoire text-[18px]">
+              why BLM
+              <Image
+                src={"/assets/icons/text-decoration-pattern.svg"}
+                alt="text decoration pattern"
+                width={100}
+                height={100}
+                className="absolute top-[-10px] right-[-13px] w-[20px]"
+              />
+            </h1>
+            <p className="font-poppins text-start text-[12px] text-para_color">
+              We are a self-governing group of individuals who work together as
+              members of a jointly owned business in South India to achieve our
+              common social and cultural needs and objectives. Our primary goal
+              is to raise the members of our BLM family by offering services,
+              jobs, and other opportunities.
+            </p>
+          </div>
+          <div className="flex gap-1 items-center justify-center w-full h-[140px]">
+            <div className="w-[50%] h-full bg-[url('/assets/images/why-img-1.png')] bg-no-repeat bg-cover bg-center"></div>
+            <div className="w-[30%] h-full bg-[url('/assets/images/why-img-2.png')] bg-no-repeat bg-cover bg-center"></div>
+            <div className="w-[20%] h-full bg-[url('/assets/images/why-img-3.png')] bg-no-repeat bg-cover bg-center"></div>
           </div>
         </section>
       </main>
     </>
   );
-}
+};
 
-export default Home
+export default Home;
