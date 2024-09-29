@@ -15,8 +15,8 @@ const Button = ({
   justifyContent = "center",
   alignItems = "center",
   flexDirection = "row",
-  gap = "0",
   border = "0",
+  fontSize = "14px",
   className = "",
 }) => {
 
@@ -40,6 +40,7 @@ const Button = ({
           flexDirection: flexDirection,
           gap: "10",
           border: border,
+          fontSize: fontSize,
 
         }}
         className={ className }

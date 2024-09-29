@@ -6,8 +6,12 @@ import Title from "@/components/ui/Title";
 import Button from "@/components/ui/Button";
 import { RiArrowLeftSLine,RiArrowRightSLine } from "react-icons/ri";
 import ServiceCarousel from "@/components/ServiceCarousel";
+import ProjectCarousel from "@/components/ProjectCarousel";
 
 const Home = () => {
+
+  const projectTitle = ["Kerala", "Tamil Nadu", "Pondicherry"]
+
   return (
     <>
       <NavBar />
@@ -150,6 +154,10 @@ const Home = () => {
         </section>
       </main>
 
+      {/* Chairman Section end */}
+
+      <div className="w-[80%] lg:w-[1290px] h-[1px] bg-black opacity-[.22] m-auto"></div>
+
       {/* Service Section */}
 
       <main className="w-full flex items-center justify-center p-6 py-10">
@@ -186,6 +194,52 @@ const Home = () => {
             </div>
           </div>
           <ServiceCarousel />
+        </section>
+      </main>
+
+      {/* Service Section end*/}
+
+      <div className="w-[80%] lg:w-[1290px] h-[1px] bg-black opacity-[.22] m-auto"></div>
+
+      {/* Our Projects Section */}
+
+      <main className="w-full flex items-center justify-center p-6 py-10">
+        <section className="flex flex-col items-start justify-center gap-7 w-full lg:max-w-[1290px]">
+          <Title>Our Projects</Title>
+          <div className="flex w-full justify-between">
+            <div className="flex gap-6">
+                  <button className="text-[14px] sm:text-[20px] lg:text-[22px] font-poppins text-black border-b-[1px] border-accent_color">
+                    Kerala
+                  </button>
+                  <button className="text-[14px] sm:text-[20px] lg:text-[22px] font-poppins text-para_color">
+                    Tamil Nadu
+                  </button>
+                  <button className="text-[14px] sm:text-[20px] lg:text-[22px] font-poppins text-para_color">
+                    Pondicherry
+                  </button>
+            </div>
+            <div className="hidden sm:flex gap-3">
+              <Button
+                border="1px solid #CA943A"
+                paddingX="10px"
+                paddingY="10px"
+                borderRadius="50px"
+                className="custom-prev-button"
+              >
+                <RiArrowLeftSLine color="#CA943A" size={30} />
+              </Button>
+              <Button
+                border="1px solid #CA943A"
+                paddingX="10px"
+                paddingY="10px"
+                borderRadius="50px"
+                className="custom-next-button"
+              >
+                <RiArrowRightSLine color="#CA943A" size={30} />
+              </Button>
+            </div>
+          </div>
+          <ProjectCarousel/>
         </section>
       </main>
     </>
