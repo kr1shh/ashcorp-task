@@ -67,9 +67,8 @@ const Home = () => {
             <Image
               src={"/assets/icons/pattern.svg"}
               alt=" pattern "
-              layout="fill"
-              objectFit="cover"
-              className="absolute top-0 left-0"
+              fill
+              className="absolute top-0 left-0 object-cover"
             />
           </div>
 
@@ -77,9 +76,8 @@ const Home = () => {
             <Image
               src={"/assets/icons/pattern.svg"}
               alt=" pattern "
-              layout="fill"
-              objectFit="cover"
-              className="absolute top-0 left-0 scale-x-[-1]"
+              fill
+              className="absolute top-0 left-0 scale-x-[-1] object-cover"
             />
           </div>
         </section>
@@ -90,9 +88,7 @@ const Home = () => {
       <main className="p-6 py-10 flex justify-center items-center">
         <section className="flex flex-col items-center justify-center gap-7 lg:max-w-[1400px]">
           <div className="flex flex-col justify-start items-start gap-3">
-            <Title>
-              why BLM
-            </Title>
+            <Title>why BLM</Title>
             <p className="font-poppins text-start text-[12px] text-para_color sm:text-[14px] lg:text-[18px]">
               We are a self-governing group of individuals who work together as
               members of a jointly owned business in South India to achieve our
@@ -105,6 +101,42 @@ const Home = () => {
             <div className="w-[50%] h-full bg-[url('/assets/images/why-img-1.png')] bg-no-repeat bg-cover bg-center"></div>
             <div className="w-[30%] h-full bg-[url('/assets/images/why-img-2.png')] bg-no-repeat bg-cover bg-center"></div>
             <div className="w-[20%] h-full bg-[url('/assets/images/why-img-3.png')] bg-no-repeat bg-cover bg-center"></div>
+          </div>
+        </section>
+      </main>
+
+      {/* Chairman Section */}
+
+      <main className="w-full flex items-center justify-center p-6 py-10">
+        <section className="flex flex-col sm:flex-row items-start sm:items-center justify-center gap-7 w-full lg:max-w-[1400px]">
+          <div className="sm:w-[50%] md:w-[50%]">
+            <Title>Chairman Says</Title>
+            <p className="font-poppins text-start text-[12px] text-para_color sm:text-[14px] lg:text-[18px]">
+              It is my great pleasure to extend heartfelt greetings to one and
+              all. I want to take this opportunity to thank all members, leaders
+              and staff for contributing wholeheartedly to the progress of our
+              Society. I would also like to thank our valued members for their
+              continuous patronage. Our modest beginning in 2006 with our
+              resilience and ability to embrace change with an open mind has
+              enabled us to stay true to our mission of delivering the best
+              services and products. We believe the success and growth of our
+              Society can be attributed to the consistency of our standards and
+              policies with the kind cooperation of our members.
+              <span className="hidden sm:inline-block" >
+              Over the years, our commitment to professional ethics and quality has evolved into corporate standards and practices that we use as our benchmark for excellence. Our approach in providing the highest level of quality in all of our endeavors has delivered returns at every step of the development. We are proud of ourselves for being a trustworthy household name in South India
+              </span>
+            </p>
+          </div>
+          <div className=" relative w-full h-[200px] sm:w-[50%] md:w-[40%] sm:h-[500px]">
+            <Image
+              src={"/assets/images/chairman-img.png"}
+              alt="chairman"
+              fill
+              className="w-full object-cover sm:object-top"
+              style={{
+                objectPosition: "50% 16%",
+              }}
+            />
           </div>
         </section>
       </main>
