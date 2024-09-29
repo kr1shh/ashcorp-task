@@ -16,6 +16,8 @@ const Button = ({
   alignItems = "center",
   flexDirection = "row",
   gap = "0",
+  border = "0",
+  className = "",
 }) => {
 
   return (
@@ -37,7 +39,10 @@ const Button = ({
           alignItems: alignItems,
           flexDirection: flexDirection,
           gap: "10",
+          border: border,
+
         }}
+        className={ className }
       >
         {children}
       </button>

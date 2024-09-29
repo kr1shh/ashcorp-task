@@ -3,6 +3,9 @@ import NavBar from "@/components/NavBar";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import Image from "next/image";
 import Title from "@/components/ui/Title";
+import Button from "@/components/ui/Button";
+import { RiArrowLeftSLine,RiArrowRightSLine } from "react-icons/ri";
+import ServiceCarousel from "@/components/ServiceCarousel";
 
 const Home = () => {
   return (
@@ -122,8 +125,14 @@ const Home = () => {
               services and products. We believe the success and growth of our
               Society can be attributed to the consistency of our standards and
               policies with the kind cooperation of our members.
-              <span className="hidden sm:inline-block" >
-              Over the years, our commitment to professional ethics and quality has evolved into corporate standards and practices that we use as our benchmark for excellence. Our approach in providing the highest level of quality in all of our endeavors has delivered returns at every step of the development. We are proud of ourselves for being a trustworthy household name in South India
+              <span className="hidden sm:inline-block">
+                Over the years, our commitment to professional ethics and
+                quality has evolved into corporate standards and practices that
+                we use as our benchmark for excellence. Our approach in
+                providing the highest level of quality in all of our endeavors
+                has delivered returns at every step of the development. We are
+                proud of ourselves for being a trustworthy household name in
+                South India
               </span>
             </p>
           </div>
@@ -138,6 +147,45 @@ const Home = () => {
               }}
             />
           </div>
+        </section>
+      </main>
+
+      {/* Service Section */}
+
+      <main className="w-full flex items-center justify-center p-6 py-10">
+        <section className="flex flex-col items-start sm:items-center justify-center gap-7 w-full lg:max-w-[1290px]">
+          <div className="flex items-center justify-between">
+            <div>
+              <Title>Our Services</Title>
+              <p className="font-poppins text-start text-[12px] text-para_color sm:text-[14px] lg:text-[18px] sm:w-[95%] lg:w[70%]">
+                BLM Housing Cooperative Society is committed to providing
+                quality housing services to our members. We strive to exceed our
+                members' expectations and provide an enjoyable and safe living
+                experience
+              </p>
+            </div>
+            <div className="hidden sm:flex gap-3">
+              <Button
+                border="1px solid #CA943A"
+                paddingX="10px"
+                paddingY="10px"
+                borderRadius="50px"
+                className="custom-prev-button"
+              >
+                <RiArrowLeftSLine color="#CA943A" size={30} />
+              </Button>
+              <Button
+                border="1px solid #CA943A"
+                paddingX="10px"
+                paddingY="10px"
+                borderRadius="50px"
+                className="custom-next-button"
+              >
+                <RiArrowRightSLine color="#CA943A" size={30} />
+              </Button>
+            </div>
+          </div>
+          <ServiceCarousel />
         </section>
       </main>
     </>
