@@ -2,6 +2,7 @@ import HeroCarousel from "@/components/HeroCarousel";
 import NavBar from "@/components/NavBar";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import Image from "next/image";
+import Title from "@/components/ui/Title";
 
 const Home = () => {
   return (
@@ -86,20 +87,13 @@ const Home = () => {
 
       {/* Why us section */}
 
-      <main className="p-6 py-10">
-        <section className="flex flex-col items-center justify-center gap-7">
+      <main className="p-6 py-10 flex justify-center items-center">
+        <section className="flex flex-col items-center justify-center gap-7 lg:max-w-[1400px]">
           <div className="flex flex-col justify-start items-start gap-3">
-            <h1 className="relative inline-block font-allenoire text-[18px]">
+            <Title>
               why BLM
-              <Image
-                src={"/assets/icons/text-decoration-pattern.svg"}
-                alt="text decoration pattern"
-                width={100}
-                height={100}
-                className="absolute top-[-10px] right-[-13px] w-[20px]"
-              />
-            </h1>
-            <p className="font-poppins text-start text-[12px] text-para_color">
+            </Title>
+            <p className="font-poppins text-start text-[12px] text-para_color sm:text-[14px] lg:text-[18px]">
               We are a self-governing group of individuals who work together as
               members of a jointly owned business in South India to achieve our
               common social and cultural needs and objectives. Our primary goal
@@ -107,7 +101,7 @@ const Home = () => {
               jobs, and other opportunities.
             </p>
           </div>
-          <div className="flex gap-1 items-center justify-center w-full h-[140px]">
+          <div className="flex gap-1 items-center justify-center w-full h-[140px] sm:h-[320px] lg:h-[520px]">
             <div className="w-[50%] h-full bg-[url('/assets/images/why-img-1.png')] bg-no-repeat bg-cover bg-center"></div>
             <div className="w-[30%] h-full bg-[url('/assets/images/why-img-2.png')] bg-no-repeat bg-cover bg-center"></div>
             <div className="w-[20%] h-full bg-[url('/assets/images/why-img-3.png')] bg-no-repeat bg-cover bg-center"></div>
