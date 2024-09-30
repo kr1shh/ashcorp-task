@@ -168,7 +168,7 @@ const Home = () => {
               <p className="font-poppins text-start text-[12px] text-para_color sm:text-[14px] lg:text-[18px] sm:w-[95%] lg:w[70%]">
                 BLM Housing Cooperative Society is committed to providing
                 quality housing services to our members. We strive to exceed our
-                members' expectations and provide an enjoyable and safe living
+                members&apos; expectations and provide an enjoyable and safe living
                 experience
               </p>
             </div>
