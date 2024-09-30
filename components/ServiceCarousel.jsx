@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import './serviceCarousel.css'
+import '../public/styles/customSwiper.css'
 
 const ServiceCarousel = () => {
   const [domLoaded, setDomLoaded] = useState(false);
@@ -47,7 +47,7 @@ const ServiceCarousel = () => {
           },
           1024: {
             slidesPerView: 3,
-            spaceBetween: 40,
+            spaceBetween: 10,
           },
         }}
       >

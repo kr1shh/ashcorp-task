@@ -1,12 +1,35 @@
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
 import { FaChevronDown } from "react-icons/fa6";
 import Button from "./ui/Button";
+import { useEffect, useState } from "react";
 
 const NavBar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+
   return (
     <>
-      <nav className="fixed top-0 z-[100] flex items-center justify-between w-full px-3 py-4">
+      <nav className={`fixed top-0 z-[100] flex items-center justify-between w-full px-3 py-4 transition-all duration-300 ${ scrolled?'backdrop-blur-[6px] backdrop-saturate-[180%] bg-black/30':"" }`}>
         <div className="w-14">
           <Image
             src={"/assets/images/nav-logo.png"}
@@ -16,7 +39,7 @@ const NavBar = () => {
           />
         </div>
         <div className="hidden md:block">
-          <ul className="flex items-center justify-center text-white gap-3 font-poppins font-light">
+          <ul className="flex items-center justify-center text-white gap-9 font-poppins font-light">
             <li>
               <Link href={"/home"}> Home </Link>
             </li>
@@ -24,9 +47,8 @@ const NavBar = () => {
               <Link href={"/home"}> About </Link>
             </li>
             <li>
-              <Link href={"/home"} className="flex justify-center items-center">
-                {" "}
-                Our Branches <FaChevronDown />
+              <Link href={"/home"} className="flex justify-center items-center gap-1">
+                Our Branches<FaChevronDown />
               </Link>
             </li>
             <li>
@@ -36,9 +58,8 @@ const NavBar = () => {
               <Link href={"/home"}> Our Projects </Link>
             </li>
             <li>
-              <Link href={"/home"} className="flex justify-center items-center">
-                {" "}
-                Gallery <FaChevronDown />{" "}
+              <Link href={"/home"} className="flex justify-center items-center gap-1">
+                Gallery <FaChevronDown />
               </Link>
             </li>
             <li>
