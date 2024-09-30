@@ -7,7 +7,7 @@ import { FaBuilding } from "react-icons/fa6";
 const ProjectCard = ({ title,image,place,squareFeet }) => {
   return (
     <>
-        <div className="relative m-auto w-[200px] sm:w-[340px] lg:w-[425px] h-[240px] sm:h-[410px] lg:h-[585px] flex flex-col items-start justify-end p-[12px] lg:p-[32px] bg-slate-300 bg-no-repeat bg-cover bg-center"
+        <div className="relative m-auto w-[200px] sm:w-[340px] lg:w-[355px] h-[240px] sm:h-[410px] lg:h-[585px] flex flex-col items-start justify-end p-[12px] lg:p-[32px] bg-slate-300 bg-no-repeat bg-cover bg-center"
         style={{
             backgroundImage:`url('${ image }')`,
         }}>

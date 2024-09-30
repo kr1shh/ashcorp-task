@@ -8,7 +8,7 @@ const ServiceCard = ({ title = "Title", image = "" }) => {
     <>
       <div
         style={{ backgroundImage: `url('${image}')` }}
-        className={`relative flex items-end justify-center w-[200px] sm:w-[331px] lg:w-[425px] h-[236px] sm:h-[401px] lg:h-[525px] bg-no-repeat bg-cover bg-center m-auto`}
+        className={`relative flex items-end justify-center w-[200px] sm:w-[331px] lg:w-[355px] h-[236px] sm:h-[401px] lg:h-[525px] bg-no-repeat bg-cover bg-center m-auto`}
       >
         <div className="mb-2 lg:mb-5 z-10">
           <h1 className="font-allenoire text-white text-[12px] sm:text-[21px] lg:text-[32px]">

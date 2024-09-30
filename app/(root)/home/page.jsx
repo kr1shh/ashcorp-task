@@ -7,6 +7,10 @@ import Button from "@/components/ui/Button";
 import { RiArrowLeftSLine,RiArrowRightSLine } from "react-icons/ri";
 import ServiceCarousel from "@/components/ServiceCarousel";
 import ProjectCarousel from "@/components/ProjectCarousel";
+import Link from "next/link";
+import { BsArrowRight } from "react-icons/bs";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
+import SectionDivision from "@/components/ui/SectionDivision";
 
 const Home = () => {
 
@@ -156,7 +160,7 @@ const Home = () => {
 
       {/* Chairman Section end */}
 
-      <div className="w-[80%] lg:w-[1290px] h-[1px] bg-black opacity-[.22] m-auto"></div>
+      <SectionDivision />
 
       {/* Service Section */}
 
@@ -168,8 +172,8 @@ const Home = () => {
               <p className="font-poppins text-start text-[12px] text-para_color sm:text-[14px] lg:text-[18px] sm:w-[95%] lg:w[70%]">
                 BLM Housing Cooperative Society is committed to providing
                 quality housing services to our members. We strive to exceed our
-                members&apos; expectations and provide an enjoyable and safe living
-                experience
+                members&apos; expectations and provide an enjoyable and safe
+                living experience
               </p>
             </div>
             <div className="hidden sm:flex gap-3">
@@ -199,7 +203,7 @@ const Home = () => {
 
       {/* Service Section end*/}
 
-      <div className="w-[80%] lg:w-[1290px] h-[1px] bg-black opacity-[.22] m-auto"></div>
+      <SectionDivision />
 
       {/* Our Projects Section */}
 
@@ -208,15 +212,15 @@ const Home = () => {
           <Title>Our Projects</Title>
           <div className="flex w-full justify-between">
             <div className="flex gap-6">
-                  <button className="text-[14px] sm:text-[20px] lg:text-[22px] font-poppins text-black border-b-[1px] border-accent_color">
-                    Kerala
-                  </button>
-                  <button className="text-[14px] sm:text-[20px] lg:text-[22px] font-poppins text-para_color">
-                    Tamil Nadu
-                  </button>
-                  <button className="text-[14px] sm:text-[20px] lg:text-[22px] font-poppins text-para_color">
-                    Pondicherry
-                  </button>
+              <button className="text-[14px] sm:text-[20px] lg:text-[22px] font-poppins text-black border-b-[1px] border-accent_color">
+                Kerala
+              </button>
+              <button className="text-[14px] sm:text-[20px] lg:text-[22px] font-poppins text-para_color">
+                Tamil Nadu
+              </button>
+              <button className="text-[14px] sm:text-[20px] lg:text-[22px] font-poppins text-para_color">
+                Pondicherry
+              </button>
             </div>
             <div className="hidden sm:flex gap-3">
               <Button
@@ -239,7 +243,92 @@ const Home = () => {
               </Button>
             </div>
           </div>
-          <ProjectCarousel/>
+          <ProjectCarousel />
+        </section>
+      </main>
+
+      {/* Projects Section end */}
+
+      <SectionDivision />
+
+      {/* Loan Section */}
+
+      <main className="w-full flex items-center justify-center p-6 py-10">
+        <section className="flex flex-col items-start justify-center gap-7 w-full lg:max-w-[1290px]">
+          <div className="w-full flex flex-col gap-3">
+            <div className="flex sm:flex-row flex-col gap-3 justify-start items-start">
+              <div className="sm:w-[50%]">
+                <Title>Property Loans</Title>
+                <p className="text-[12px] sm:text-[14px] lg:text-[18px] font-poppins mt-3">
+                  Now you can meet your property needs with BLM&apos;s property
+                  loan. With our property loan, you may finally buy the property
+                  of your dreams. Property loan is a mortgage loan provided by
+                  BLM that offers a loan amount to buy a property. We offer
+                  property loan to all of our members who meet the necessary
+                  requirements in order to purchase the property of their
+                  choice. So what are you waiting for? Become a BLM member and
+                  fulfil your dream of buying a property.
+                </p>
+              </div>
+              <div className="relative w-full h-[200px] sm:w-[50%] sm:h-[320px]">
+                <Image
+                  src="/assets/images/loan-img.jpeg"
+                  alt=" pattern "
+                  fill
+                  className="object-cover w-full object-center"
+                />
+              </div>
+            </div>
+            <div className="flex justify-start">
+              <Link
+                href={"/"}
+                className="lg:text-[20px] flex items-center justify-center gap-2 text-accent_color font-poppins"
+              >
+                See more <BsArrowRight />
+              </Link>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      {/* Loan Section end */}
+
+      <SectionDivision />
+
+      {/* Testimonial Section */}
+
+      <main className="w-full flex items-center justify-center p-6 py-10">
+        <section className="flex flex-col items-start justify-center gap-7 w-full lg:max-w-[1290px]">
+          <div className="flex items-center justify-between sm:w-full">
+            <div>
+              <Title>What They Say</Title>
+              <p className="font-poppins text-start text-[12px] text-para_color sm:text-[14px] lg:text-[18px] sm:w-[95%] lg:w[70%]">
+                Hear the powerful voices and personal stories that highlight the
+                impact of the BLM movement.
+              </p>
+            </div>
+            <div className="hidden sm:flex gap-3">
+              <Button
+                border="1px solid #CA943A"
+                paddingX="10px"
+                paddingY="10px"
+                borderRadius="50px"
+                className="custom-prev-button"
+              >
+                <RiArrowLeftSLine color="#CA943A" size={30} />
+              </Button>
+              <Button
+                border="1px solid #CA943A"
+                paddingX="10px"
+                paddingY="10px"
+                borderRadius="50px"
+                className="custom-next-button"
+              >
+                <RiArrowRightSLine color="#CA943A" size={30} />
+              </Button>
+            </div>
+          </div>
+          <TestimonialCarousel />
         </section>
       </main>
     </>
