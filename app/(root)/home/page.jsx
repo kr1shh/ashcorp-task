@@ -11,6 +11,7 @@ import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import SectionDivision from "@/components/ui/SectionDivision";
+import NewsCarousel from "@/components/NewsCarousel";
 
 const Home = () => {
 
@@ -331,6 +332,55 @@ const Home = () => {
           <TestimonialCarousel />
         </section>
       </main>
+
+
+      {/* Testimonial Section End*/}
+
+      <SectionDivision />
+
+      { /* News Section */ } 
+
+      
+
+
+      <main className="w-full flex items-center justify-center p-6 py-10">
+        <section className="flex flex-col items-start justify-center gap-7 w-full lg:max-w-[1290px]">
+        <Title>News</Title>
+          <div className="flex w-full justify-between">
+            <div className="flex gap-6">
+              <button className="text-[14px] sm:text-[20px] lg:text-[22px] font-poppins text-black border-b-[1px] border-accent_color">
+                News & Events
+              </button>
+              <button className="text-[14px] sm:text-[20px] lg:text-[22px] font-poppins text-para_color">
+                Awards & Rewards
+              </button>
+            </div>
+            <div className="hidden sm:flex gap-3">
+              <Button
+                border="1px solid #CA943A"
+                paddingX="10px"
+                paddingY="10px"
+                borderRadius="50px"
+                className="custom-prev-button"
+              >
+                <RiArrowLeftSLine color="#CA943A" size={30} />
+              </Button>
+              <Button
+                border="1px solid #CA943A"
+                paddingX="10px"
+                paddingY="10px"
+                borderRadius="50px"
+                className="custom-next-button"
+              >
+                <RiArrowRightSLine color="#CA943A" size={30} />
+              </Button>
+            </div>
+          </div>
+
+          <NewsCarousel/>
+        </section>
+      </main>      
+
     </>
   );
 };
