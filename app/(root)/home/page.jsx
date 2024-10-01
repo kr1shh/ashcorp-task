@@ -13,6 +13,7 @@ import TestimonialCarousel from "@/components/TestimonialCarousel";
 import SectionDivision from "@/components/ui/SectionDivision";
 import NewsCarousel from "@/components/NewsCarousel";
 import Footer from "@/components/Footer";
+import InquiryCard from "@/components/InquiryCard";
 
 
 const Home = () => {
@@ -449,9 +450,17 @@ const Home = () => {
         </section>
       </main>
 
+      {/*  Inquiry Section */}
+
+      <section className="w-full flex items-center justify-center p-6 py-10">
+        <div className="flex flex-col items-start justify-center gap-7 w-full lg:max-w-[1290px]">
+            <InquiryCard />
+        </div>
+      </section>
+
       {/* Footer Section */}
 
-      
+
       <footer>
         <Footer />
       </footer>
