@@ -26,13 +26,13 @@ const InquiryCard = () => {
       <div className="relative w-full bg-primary_color h-[222px] p-[15px] font-poppins text-white">
         <div className="relative overflow-hidden w-full h-full flex flex-col justify-center items-center gap-3">
 
-          <i className="bg-primary_color z-[10] border border-accent_color absolute p-[15px] sm:p-[8px] lg:p-[10px] rounded-full top-[-8px] right-[-8px]"></i>
-          <i className="bg-primary_color z-[10] border border-accent_color absolute p-[15px] sm:p-[8px] lg:p-[10px] rounded-full top-[-8px] left-[-8px]"></i>
-          <i className="bg-primary_color z-[10] border border-accent_color absolute p-[15px] sm:p-[8px] lg:p-[10px] rounded-full bottom-[-8px] right-[-8px]"></i>
-          <i className="bg-primary_color z-[10] border border-accent_color absolute p-[15px] sm:p-[8px] lg:p-[10px] rounded-full bottom-[-8px] left-[-8px]"></i>
+          <i className="bg-primary_color z-[10] border border-accent_color absolute p-[15px] sm:p-[25px] lg:p-[10px] rounded-full top-[-8px] sm:top-[-13px] right-[-8px] sm:right-[-13px]"></i>
+          <i className="bg-primary_color z-[10] border border-accent_color absolute p-[15px] sm:p-[25px] lg:p-[10px] rounded-full top-[-8px] sm:top-[-13px] left-[-8px] sm:left-[-13px]"></i>
+          <i className="bg-primary_color z-[10] border border-accent_color absolute p-[15px] sm:p-[25px] lg:p-[10px] rounded-full bottom-[-8px] sm:bottom-[-13px] right-[-8px] sm:right-[-13px]"></i>
+          <i className="bg-primary_color z-[10] border border-accent_color absolute p-[15px] sm:p-[25px] lg:p-[10px] rounded-full bottom-[-8px] sm:bottom-[-13px] left-[-8px] sm:left-[-13px]"></i>
 
 
-          <div className="absolute top-0 left-0 w-[70px] h-[70px]">
+          <div className="absolute top-0 left-0 w-[70px] h-[70px] sm:w-[100px] sm:h-[100px]">
             <Image
             src={" /assets/icons/pattern.svg"}
             alt="Ui Pattern"
@@ -40,7 +40,7 @@ const InquiryCard = () => {
             className="object-contain w-full object-center"/>
           </div>
 
-          <div className="absolute top-0 right-0 w-[70px] h-[70px]">
+          <div className="absolute top-0 right-0 w-[70px] h-[70px] sm:w-[100px] sm:h-[100px]">
             <Image
             src={" /assets/icons/pattern.svg"}
             alt="Ui Pattern"
@@ -49,8 +49,8 @@ const InquiryCard = () => {
           </div>
 
           <div className="relative z-[1] border border-accent_color w-full h-full flex flex-col justify-center items-center gap-3">
-            <div className="flex flex-col items-center justify-center w-[60%]">
-              <h1 className="font-allenoire text-center text-[14px]">
+            <div className="flex flex-col items-center justify-center w-[60%] sm:w-full">
+              <h1 className="font-allenoire text-center text-[14px] sm:text-[16px]">
                 Do you have any questions?
               </h1>
               <p className="text-center text-[10px] font-[300]">
