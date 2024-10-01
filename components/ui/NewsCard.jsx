@@ -10,7 +10,7 @@ const NewsCard = ({ imageUrl, newsParagraph }) => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}>
-        <p className="text-white font-poppins opacity-0 text-[9px] sm:text-[15px] lg:text-[24px] w-[150px] sm:w-[440px] lg:w-[600px] absolute bottom-3 lg:bottom-8 left-0 lg:left-8 group-hover:opacity-[1] group-hover:left-5 z-10 transition-all duration-300">
+        <p className="text-white font-poppins opacity-0 text-[9px] sm:text-[15px] lg:text-[20px] w-[150px] sm:w-[270px] lg:w-[400px] absolute bottom-3 lg:bottom-8 left-0 lg:left-8 group-hover:opacity-[1] group-hover:left-2 sm:group-hover:left-6 z-10 transition-all duration-300">
           {
             newsParagraph
           }

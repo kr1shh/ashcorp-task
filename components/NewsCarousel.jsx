@@ -3,7 +3,7 @@ import NewsCard from "./ui/NewsCard"
 const NewsCarousel = () => {
   return (
     <>
-    <div className="w-full flex justify-center items-center gap-10">
+    <div className="w-full flex justify-center items-center gap-1 sm:gap-6">
       <NewsCard
         newsParagraph="
         &quot;Chairman's Vision Expands to India's Food Processing
