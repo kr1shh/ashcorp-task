@@ -2,10 +2,10 @@ import Image from "next/image"
 
 
 
-const Title = ({ children }) => {
+const Title = ({ children,className }) => {
   return (
     <>
-        <h1 className="relative inline-block font-allenoire text-[18px] sm:text-[24px] lg:text-[28px]">
+        <h1 className={`relative inline-block font-allenoire text-[18px] sm:text-[24px] lg:text-[28px] ${ className }`}>
               { children }
               <Image
                 src={"/assets/icons/text-decoration-pattern.svg"}

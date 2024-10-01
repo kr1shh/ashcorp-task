@@ -12,6 +12,8 @@ import { BsArrowRight } from "react-icons/bs";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import SectionDivision from "@/components/ui/SectionDivision";
 import NewsCarousel from "@/components/NewsCarousel";
+import Footer from "@/components/Footer";
+
 
 const Home = () => {
 
@@ -446,6 +448,13 @@ const Home = () => {
           </div>
         </section>
       </main>
+
+      {/* Footer Section */}
+
+      
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };
