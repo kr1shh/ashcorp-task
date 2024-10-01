@@ -5,9 +5,9 @@ import Title from "./ui/Title";
 const Footer = () => {
   return (
     <>
-      <div className="relative w-full flex flex-col items-center justify-center py-4 bg-[#fefefe] pt-[70px] pb-[80px] mt-10">
+      <div className="relative w-full flex flex-col sm:gap-[100px] items-center justify-center bg-[#F1F1F1] pt-[130px] lg:pt-[200px] mt-10">
 
-        <div className="absolute top-0 right-0 w-[100px] h-[100px]">
+        <div className="absolute top-0 right-0 w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] lg:w-[250px] lg:h-[250px]">
           <Image
             src={"/assets/icons/pattern-footer.svg"}
             alt="footer pattern"
@@ -16,7 +16,7 @@ const Footer = () => {
           />
         </div>
 
-        <div className="absolute top-0 left-0 w-[100px] h-[100px]">
+        <div className="absolute top-0 left-0 w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] lg:w-[250px] lg:h-[250px]">
           <Image
             src={"/assets/icons/pattern-footer.svg"}
             alt="footer pattern"
@@ -38,8 +38,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-full flex flex-col gap-7 mt-10 font-poppins px-8">
-          <div>
+        <div className="w-full flex flex-col sm:flex-row sm:justify-start gap-7 sm:gap-2 mt-10 font-poppins px-8">
+          <div className="sm:w-[300px]">
             <h1 className="text-[10px] sm:text-[12px] text-black opacity-50 mb-2">
               HOUSING PROJECT
             </h1>
@@ -49,7 +49,7 @@ const Footer = () => {
               <li>Up Coming</li>
             </ul>
           </div>
-          <div>
+          <div className="sm:w-[300px]">
             <h1 className="text-[10px] sm:text-[12px] text-black opacity-50 mb-2">
               SERVICES
             </h1>
@@ -62,7 +62,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="w-full flex justify-between">
-            <div>
+            <div className="sm:w-[300px]">
               <h1 className="text-[10px] sm:text-[12px] text-black opacity-50 mb-2">
                 CONTACT US
               </h1>
@@ -80,7 +80,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <div className="relative w-[120px] h-[120px]">
+              <div className="relative w-[120px] h-[120px] lg:w-[200px] lg:h-[200px]">
                 <Image
                   src={"/assets/images/footer-logo.png"}
                   alt="footer logo"
@@ -92,7 +92,15 @@ const Footer = () => {
           </div>
         </div>
 
-        <span className="absolute bottom-5 left-5 font-poppins text-black opacity-40 text-[12px]">© 2023 — Copyright</span>
+        <div className="w-full flex justify-between px-4 py-9">
+            <p className="font-poppins text-black opacity-40 text-[12px]">
+            &copy;2023 — Copyright
+            </p>
+
+            <p className="hidden sm:block font-poppins text-black opacity-40 text-[12px]">
+                privacy policy
+            </p>
+        </div>
       </div>
     </>
   );
