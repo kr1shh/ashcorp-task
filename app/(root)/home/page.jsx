@@ -333,19 +333,15 @@ const Home = () => {
         </section>
       </main>
 
-
       {/* Testimonial Section End*/}
 
       <SectionDivision />
 
-      { /* News Section */ } 
-
-      
-
+      {/* News Section */}
 
       <main className="w-full flex items-center justify-center p-6 py-10">
         <section className="flex flex-col items-start justify-center gap-7 w-full lg:max-w-[1290px]">
-        <Title>News</Title>
+          <Title>News</Title>
           <div className="flex w-full justify-between">
             <div className="flex gap-6">
               <button className="text-[14px] sm:text-[20px] lg:text-[22px] font-poppins text-black border-b-[1px] border-accent_color">
@@ -377,10 +373,79 @@ const Home = () => {
             </div>
           </div>
 
-          <NewsCarousel/>
+          <NewsCarousel />
         </section>
-      </main>      
+      </main>
 
+      {/* News Section End*/}
+
+      <SectionDivision />
+
+      {/* Videos section */}
+
+      <main className="w-full flex items-center justify-center p-6 py-10">
+        <section className="flex flex-col items-start justify-center gap-7 w-full lg:max-w-[1290px]">
+          <div>
+            <Title>Videos</Title>
+          </div>
+          <div className="w-full flex flex-col items-center justify-center gap-3">
+            <div className="relative w-full h-[236px] sm:h-[372px] lg:h-[600px]">
+              <Image
+                src={"/assets/images/videos-img-1.png"}
+                alt="video 1"
+                fill
+                className="object-cover w-full object-center"
+              />
+            </div>
+            <div className="w-full flex items-center justify-center gap-3">
+              <div className="relative w-full h-[62px] sm:h-[140px] lg:h-[224px]">
+                <Image
+                  src={"/assets/images/videos-img-2.png"}
+                  alt="video 1"
+                  fill
+                  className="object-cover w-full object-center"
+                />
+              </div>
+              <div className="relative w-full h-[62px] sm:h-[140px] lg:h-[224px]">
+                <Image
+                  src={"/assets/images/videos-img-3.png"}
+                  alt="video 1"
+                  fill
+                  className="object-cover w-full object-center"
+                />
+              </div>
+              <div className="relative w-full h-[62px] sm:h-[140px] lg:h-[224px]">
+                <Image
+                  src={"/assets/images/videos-img-4.png"}
+                  alt="video 1"
+                  fill
+                  className="object-cover w-full object-center"
+                />
+              </div>
+              <div className="relative w-full h-[62px] sm:h-[140px] lg:h-[224px]">
+                <Image
+                  src={"/assets/images/videos-img-5.png"}
+                  alt="video 1"
+                  fill
+                  className="object-cover w-full object-center"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-start sm:justify-center w-full">
+            <Button
+              border="1px solid #D7D7D7"
+              bgColor="#F7F7F7"
+              textColor="#CA943A"
+              paddingX="20px"
+              paddingY="12px"
+              className="flex items-center justify-center gap-2"
+            >
+              See more <BsArrowRight />
+            </Button>
+          </div>
+        </section>
+      </main>
     </>
   );
 };
